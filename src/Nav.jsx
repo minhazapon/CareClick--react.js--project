@@ -48,7 +48,7 @@ function Nav() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-blue-950 text-white">Sign In</a>
+                    <a className="btn bg-white border-[1px] border-black text-black">Sign In</a>
                 </div>
             </div>
 

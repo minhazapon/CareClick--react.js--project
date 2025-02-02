@@ -3,6 +3,7 @@ import Products from "./home file/Products"
 import Safety from "./home file/Safety"
 import Save from "./home file/SaveCard"
 import ShopCard from "./home file/ShopCard"
+import Thermometer from "./home file/Thermometer"
 
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
             <Products></Products>
             <ShopCard></ShopCard>
             <Safety></Safety>
+            <Thermometer></Thermometer>
         </div>
     )
 }

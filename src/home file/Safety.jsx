@@ -1,10 +1,14 @@
 import CountdownTimer from "./CountDownClock"
 
-
 function Safety() {
+
     return (
         <div className=" mt-20 mb-20">
-            <div>
+            <div className=" bg-no-repeat w-full bg-cover p-14"
+                style={{
+                    backgroundImage: "url(https://img.freepik.com/premium-photo/there-are-many-white-yellow-flowers-painting-generative-ai_958078-33476.jpg?w=740)",
+                }}
+            >
                 <div>
                     <p className=" text-4xl font-bold text-black ">Grade A Safety Masks<br></br>
                         for Sale. Hurry!</p>

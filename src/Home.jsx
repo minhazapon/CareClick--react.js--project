@@ -1,5 +1,6 @@
 import Banner from "./home file/Banner"
 import ClientReview from "./home file/ClientReview"
+import News from "./home file/News"
 import Products from "./home file/Products"
 import Safety from "./home file/Safety"
 import Save from "./home file/SaveCard"
@@ -17,6 +18,7 @@ function Home() {
             <Safety></Safety>
             <Thermometer></Thermometer>
             <ClientReview></ClientReview>
+            <News></News>
         </div>
     )
 }

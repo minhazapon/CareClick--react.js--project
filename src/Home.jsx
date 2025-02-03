@@ -5,6 +5,7 @@ import Products from "./home file/Products"
 import Safety from "./home file/Safety"
 import Save from "./home file/SaveCard"
 import ShopCard from "./home file/ShopCard"
+import Subscribe from "./home file/Subscribe"
 import Thermometer from "./home file/Thermometer"
 
 
@@ -19,6 +20,7 @@ function Home() {
             <Thermometer></Thermometer>
             <ClientReview></ClientReview>
             <News></News>
+            <Subscribe></Subscribe>
         </div>
     )
 }

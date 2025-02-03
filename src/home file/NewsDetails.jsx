@@ -9,7 +9,6 @@ function NewsDetails({ news }) {
 
     return (
         <div>
-
             <div className=" border-[1px] ">
                 <div className=" flex justify-center">
                     <img className=" h-fit w-fit" src={image} alt="" />
@@ -43,9 +42,7 @@ function NewsDetails({ news }) {
                         <button className=" btn bg-white border-[1px] border-black  text-black mt-5 ">Read More</button>
                     </div>
                 </div>
-
             </div>
-
         </div>
     )
 }

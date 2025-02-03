@@ -8,8 +8,7 @@ function ThermometerDetails({ thermometer }) {
         <div>
             <div>
                 <div className="card bg-base-100 w-96 h-[600px] 
-            shadow-xl
-             hover:border-[1px] border-cyan-400
+             border-[1px]
             ">
                     <figure className="">
                         <img

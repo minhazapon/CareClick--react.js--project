@@ -7,7 +7,7 @@ function News() {
             <div>
                 <div>
                     <p className="text-5xl font-bold text-black text-center">Our Latest News</p>
-                    <p className=" mt-5 text-center ">"To array a man's will against his sickness is the supreme art of medicine." — Henry Ward Beecher</p>
+                    <p className="mt-5 text-center">"To array a man's will against his sickness is the supreme art of medicine." — Henry Ward Beecher</p>
                 </div>
 
 

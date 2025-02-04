@@ -4,9 +4,6 @@ function Nav() {
 
     const navZ = <>
         <li className=" font-sans text-xs "><NavLink to='/'>Home</NavLink></li>
-        <li className=" font-sans text-xs "><NavLink to='/about'>About</NavLink></li>
-        <li className=" font-sans text-xs "><NavLink to='/blog'>Blog</NavLink></li>
-        <li className=" font-sans text-xs "><NavLink to='/collection'>collection</NavLink></li>
         <li className=" font-sans text-xs "><NavLink to='/shop'>Shop</NavLink></li>
         <li className=" font-sans text-xs "><NavLink to='/contact'>contact</NavLink></li>
     </>

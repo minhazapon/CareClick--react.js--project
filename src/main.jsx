@@ -11,7 +11,6 @@ import Root from './Root';
 import About from './about file/About';
 import Blog from './blog file/Blog';
 import Collection from './collection file/Collection';
-import Shop from './shop file/Shopo';
 import Contact from './contact file/Contact';
 
 const router = createBrowserRouter([
@@ -34,10 +33,6 @@ const router = createBrowserRouter([
       {
         path: "/collection",
         element: <Collection></Collection>,
-      },
-      {
-        path: "/shop",
-        element: <Shop></Shop>,
       },
       {
         path: "/contact",

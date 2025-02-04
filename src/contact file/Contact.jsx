@@ -2,13 +2,47 @@ import { LuPhone } from "react-icons/lu";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaLocationArrow } from "react-icons/fa";
 import { FaBusinessTime } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 
 function Contact() {
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "e87151e8-7baa-471d-b58a-0bd71fe1cd67");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            Swal.fire({
+                title: 'Done!',
+                text: 'Do you want to continue',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            })
+            event.target.reset();
+        } else {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Do you want to continue',
+                icon: 'error',
+                confirmButtonText: 'Cool'
+            })
+            setResult(data.message);
+        }
+    };
+
     return (
         <div className=" mt-20 mb-20 ml-20 mr-20 ">
 
-            <div>
+            <div className=" flex justify-center gap-6 ">
 
                 <div>
                     <p className=" text-center font-thin text-5xl text-black ">Contact Info</p>
@@ -57,16 +91,35 @@ function Contact() {
 
                 {/* //////////////////form part/////////////////////// */}
 
-
-                <div>
-
-
-
-
+                <div className=" bg-slate-50 p-5 rounded-xl ">
+                    <form onSubmit={onSubmit}>
+                        <div>
+                            <div>
+                                <p className=" text-center font-thin text-5xl text-black ">Enquire Now</p>
+                                <p className=" text-center font-thin mt-7 text-black ">  "Medicine cures diseases, but only doctors can cure patients." — Carl Jung</p>
+                            </div>
+                            <div className=" mt-7 ">
+                                <div>
+                                    <input required className=" rounded-xl h-[50px] w-full border-[1px] border-black p-5" placeholder="Full Name" name="name" type="text" />
+                                </div>
+                                <div>
+                                    <input required className=" rounded-xl mt-3 h-[50px] w-full border-[1px] border-black p-5" placeholder="Email" type="email" name="email" id="" />
+                                </div>
+                                <div>
+                                    <input required className=" rounded-xl mt-3  h-[50px] w-full border-[1px] border-black p-5" placeholder="Subject" name="Subject" type="text" />
+                                </div>
+                                <div>
+                                    <textarea required className=" rounded-xl mt-3  h-[200px] w-full border-[1px] border-black p-5" placeholder="Message" name="Message" id=""></textarea>
+                                </div>
+                                <div>
+                                    <input className=" w-full bg-black text-white p-3 btn " type="submit" value="Submit" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
             </div>
-
         </div>
     )
 }
